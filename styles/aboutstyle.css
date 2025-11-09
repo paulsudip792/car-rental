@@ -173,6 +173,7 @@ nav,
   padding: 0 0 100px;
   background: url(../assets/about/about-banner.png) no-repeat center/cover;
   background-attachment: fixed;
+   background-blend-mode: multiply;
   display: flex;
   align-items: center;
   z-index: 1;
