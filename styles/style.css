@@ -1267,6 +1267,7 @@ ul {
   height: 100%;
   object-fit: cover;
 }
+/* Media Query */
 @media (max-width: 1400px) {
   /* Banner-scetion */
   .box-banner {
@@ -1307,6 +1308,7 @@ ul {
   .nav-link {
     margin: 6px 0 !important;
   }
+  /* explore-section */
   .card {
     max-width: 425px !important;
     min-height: 575px !important;
@@ -1819,13 +1821,7 @@ ul {
   .navbar-brand {
     width: 90px;
   }
-  .btn-tertiary {
-    color: var(--secondary-color);
-    font-size: 15px;
-    font-weight: 400;
-    border: 1px solid var(--secondary-color);
-    padding: 0px 0 0px 9px;
-  }
+
   /* Banner-Section */
   .banner-heading {
     font-size: 45px;
@@ -1882,6 +1878,13 @@ ul {
   .card-btn {
     margin-top: 27px;
     text-align: center;
+  }
+  .btn-tertiary {
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-weight: 400;
+    border: 1px solid var(--secondary-color);
+    padding: 0px 0 0px 9px;
   }
   /* Shop-section */
   .shop-heading > h4 {
