@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font awasem cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fontshare CDN -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Aos Cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swipper-css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Header-Section -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="./assets/Nav-logo.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars text-white fs-2"></i
+            ></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <button
+              class="offcanvas-header me-auto bg-transparent border-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark text-white fs-2"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link first-link" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Vehicles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Car Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">cart(0)</a>
+              </li>
+            </ul>
+            <div class="navbtn">
+              <a href="" class="btn-nav">Create Account</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner-Section -->
+    <section class="banner-sec d-flex">
+      <div class="container">
+        <div class="banner-cntn">
+          <h1 class="small-heading">BUILT TO INSPIRE</h1>
+          <h1 class="banner-heading">ranger black</h1>
+          <p class="banner-para">
+            Lorem ipsum dolor sit amet consectetur. Aliquam aliquet enim aliquet
+            nunc placerat dui tristique. Turpis aliquam morbi at suscipit
+            pretium orci.
+          </p>
+          <div class="banner-btn">
+            <a href="" class="btn-secondary">
+              <span>Discover More</span>
+              <img src="./assets/Banner-Arrow.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="row box-banner">
+          <div class="col-12 col-lg-3 banner-box">
+            <h1 data-target="50" data-suffix="+">0</h1>
+            <p>Project Complete</p>
+          </div>
+          <div class="col-12 col-lg-3 banner-box">
+            <h1 data-target="100" data-suffix="+">0</h1>
+            <p>Expert Teams</p>
+          </div>
+          <div class="col-12 col-lg-3 banner-box">
+            <h1 data-target="3.5" data-prefix="$" data-suffix="M">$0</h1>
+            <p>Project Value</p>
+          </div>
+          <div class="col-12 col-lg-3 banner-box">
+            <h1 data-target="3.5" data-prefix="$" data-suffix="M">$0</h1>
+            <p>Project Value</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Explore-Section -->
+    <section class="explore-sec">
+      <div class="container">
+        <h2 class="explo-heading" data-aos="fade-right">
+          Explore All Vehicles
+        </h2>
+        <ul class="d-flex el-po justify-content-between" id="filters">
+          <li class="expo-list fist-list" data-filter="*">In Stock</li>
+          <li class="expo-list" data-filter=".new">New Cars</li>
+          <li class="expo-list" data-filter=".used">Used Cars</li>
+        </ul>
+        <div class="row" id="vehicle-list">
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item new">
+            <div
+              class="card first"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item used">
+            <div
+              class="card second"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+            >
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-12 col-xl-4 element-item new">
+            <div
+              class="card third"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- Choose-Section -->
+    <section class="choose-sec">
+      <div class="container">
+        <h4 class="choose-heading" data-aos="fade-right">Why Choose Us?</h4>
+        <div class="row">
+          <div class="col-sm-12 col-xl-4 choose-fist" data-aos="fade-right">
+            <div class="choose-img">
+              <img src="./assets/choose-icon-1.png" alt="" />
+            </div>
+            <h4 class="choose-head">Special Financing Offers</h4>
+            <p class="choose-para">
+              Our stress-free finance department that can financial solutions to
+              save you money.
+            </p>
+            <div class="choose-img sub-choose">
+              <img src="./assets/choose-icon-2.png" alt="" />
+            </div>
+            <h4 class="choose-head">Trusted Car Dealership</h4>
+            <p class="choose-para">
+              Our stress-free finance department that can financial solutions to
+              save you money.
+            </p>
+          </div>
+          <div class="col-sm-12 col-xl-4">
+            <div class="choose-main">
+              <img src="./assets/choose-img.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-xl-4" data-aos="fade-left">
+            <div class="choose-img">
+              <img src="./assets/choose-icon-3.png" alt="" />
+            </div>
+            <h4 class="choose-head">Transparent Pricing</h4>
+            <p class="choose-para">
+              Our stress-free finance department that can financial solutions to
+              save you money.
+            </p>
+            <div class="choose-img choose-sub">
+              <img src="./assets/choose-icon-4.png" alt="" />
+            </div>
+            <h4 class="choose-head">Expert Car Service</h4>
+            <p class="choose-para">
+              Our stress-free finance department that can financial solutions to
+              save you money.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Shopbox-Section -->
+    <section class="shopbox-sec">
+      <div class="container">
+        <div class="shop-heading" data-aos="fade-right">
+          <h4>Shop Box Car Your Way</h4>
+        </div>
+        <ul class="shop-top d-flex">
+          <li class="shop-link active">New Cars For Sale</li>
+          <li class="shop-link">Used Cars For Sale</li>
+          <li class="shop-link">Browse By Type</li>
+          <li class="shop-link">Browse By Brand</li>
+        </ul>
+        <div class="row gy-3">
+          <!-- Column 1 -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Ford Cars</li>
+              <li class="car-varient">Honda Cars</li>
+              <li class="car-varient">Hyundai Cars</li>
+              <li class="car-varient">Infiniti Cars</li>
+              <li class="car-varient">Jaguar Cars</li>
+              <li class="car-varient">Jeep Cars</li>
+            </ul>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Chrysler Cars</li>
+              <li class="car-varient">Citroen Cars</li>
+              <li class="car-varient">Cupra Cars</li>
+              <li class="car-varient">Dacia Cars</li>
+              <li class="car-varient">DS Cars</li>
+              <li class="car-varient">Fiat Cars</li>
+            </ul>
+          </div>
+
+          <!-- Column 3 -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Land Rover Cars</li>
+              <li class="car-varient">Lexus Cars</li>
+              <li class="car-varient">Mercedes-Benz Cars</li>
+              <li class="car-varient">Mazda Cars</li>
+              <li class="car-varient">MG Cars</li>
+              <li class="car-varient">Kia Cars</li>
+            </ul>
+          </div>
+
+          <!-- Column 4 -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Abarth Cars</li>
+              <li class="car-varient">Romeo Cars</li>
+              <li class="car-varient">Audi Cars</li>
+              <li class="car-varient">Bentley Cars</li>
+              <li class="car-varient">BMW Cars</li>
+              <li class="car-varient">Chevrolet Cars</li>
+            </ul>
+          </div>
+
+          <!-- Column 5 -->
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl last-shop">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Mini Cars</li>
+              <li class="car-varient">Mitsubishi Cars</li>
+              <li class="car-varient">Nissan Cars</li>
+              <li class="car-varient">Peugeot Cars</li>
+              <li class="car-varient">Porsche Cars</li>
+              <li class="car-varient">Renault Cars</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- loan-section -->
+    <section class="loan-sec">
+      <div class="container">
+        <div
+          class="row loan-card g-0"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <!-- Left Image -->
+          <div class="col-sm-12 col-md-6 loan-image">
+            <img src="./assets/loan-image.png" alt="Car Loan" />
+          </div>
+          <div class="col-sm-12 col-md-6 loan-content">
+            <div class="loan-card">
+              <h2 class="loan-heading">Auto Loan Calculator</h2>
+              <p class="loan-para">
+                Use this car payment calculator to estimate monthly payments on
+                your next new or used auto loan.
+              </p>
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6 card-parice">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="price"
+                        placeholder="Price ($)"
+                        value="10000"
+                      />
+                      <label for="price">Price ($)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="interest"
+                        placeholder="Interest Rate (%)"
+                        value="10000"
+                      />
+                      <label for="interest">Price ($)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="term"
+                        placeholder="Loan Term (years)"
+                        value="5"
+                      />
+                      <label for="term">loan term (year)</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="term"
+                        placeholder="Loan Term (years)"
+                        value="5000"
+                      />
+                      <label for="term">Down Payment</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="button" class="btn btn-calc">
+                      Calculate↗<img src="./assets/" alt="" />
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Browse-Section -->
+    <section class="browse-sec">
+      <div class="container">
+        <div class="browse-heading" data-aos="fade-right">
+          <h5>Browse by Type</h5>
+        </div>
+        <div class="browse-top">
+          <div class="row">
+            <div class="col-sm-12 col-xxl-6">
+              <div
+                class="browse-top-left"
+                data-aos="flip-left"
+                data-aos-duration="1500"
+              >
+                <img src="./assets/browse-1.png" alt="" />
+              </div>
+            </div>
+            <div class="col-sm-12 col-xxl-6">
+              <div
+                class="browse-top-right"
+                data-aos="flip-right"
+                data-aos-duration="1500"
+              >
+                <img src="./assets/browse-2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="browse-bottom">
+          <div class="row">
+            <div class="col-lg-6 col-xxl-4">
+              <div
+                class="browse-1"
+                data-aos="flip-left"
+                data-aos-duration="1500"
+              >
+                <img src="./assets/browse-3.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-6 col-xxl-4">
+              <div
+                class="browse-2"
+                data-aos="flip-right"
+                data-aos-duration="1500"
+              >
+                <img src="./assets/browse-4.png" alt="" />
+              </div>
+            </div>
+            <div class="col-lg-12 col-xxl-4">
+              <div
+                class="browse-3"
+                data-aos="flip-right"
+                data-aos-duration="1500"
+              >
+                <img src="./assets/browse-5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- Customer-section -->
+    <section class="customer-sec">
+      <div class="container">
+        <div class="customer-top">
+          <div class="row justify-content-between customer-top">
+            <div class="col-sm-12 col-xl-6">
+              <div class="cutomer-left-heading" data-aos="fade-right">
+                <h6>What our customers say</h6>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xl-6">
+              <div class="cutomer-right-heading" data-aos="fade-left">
+                <h5>
+                  Rated 4.7 / 5 based on 28,370 reviews Showing our 4 & 5 star
+                  reviews
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="customer-background">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="review-card">
+                  <div class="review-top">
+                    <div class="user-info">
+                      <img
+                        src="./assets/profile-logo.png"
+                        alt="User"
+                        class="user-img"
+                      />
+                    </div>
+                    <h4 class="user-name">Ali Tufan</h4>
+                    <div class="verified">
+                      <img src="./assets/tick-logo.png" alt="" />
+                      <span>Verified</span>
+                    </div>
+                  </div>
+                  <div class="stars">★★★★★</div>
+                  <h3 class="review-title">
+                    Sales process was simple and easy
+                  </h3>
+                  <p class="review-text">
+                    Sales process was simple and easy. Maximillion was friendly
+                    and I didn’t feel...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Arrows -->
+          </div>
+        </div>
+        <div class="swiper-button-prev custom-prev"></div>
+        <div class="swiper-button-next custom-next"></div>
+      </div>
+    </section>
+    <!-- our-team-section -->
+    <section class="our-team">
+      <div class="container">
+        <div class="team-heading" data-aos="fade-right">
+          <h6>Our Team</h6>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 col-xxl-4">
+            <div class="member" data-aos="flip-left" data-aos-duration="1500">
+              <img src="./assets/team1.jpg.png" alt="" />
+            </div>
+            <p class="member-name">Courtney Henry</p>
+            <p class="member-role">Development Manager</p>
+          </div>
+          <div class="col-sm-12 col-lg-6 col-xxl-4">
+            <div class="member" data-aos="flip-right" data-aos-duration="1500">
+              <img src="./assets/team2.jpg.png" alt="" />
+            </div>
+            <p class="member-name">Jerome Bell</p>
+            <p class="member-role">Software Tester</p>
+          </div>
+          <div class="col-sm-12 col-lg-12 col-xxl-4">
+            <div
+              class="member last-member"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
+              <img src="./assets/team3.png" alt="" />
+            </div>
+            <p class="member-name last-name">Jerome Bell</p>
+            <p class="member-role last-role">Software Tester</p>
+          </div>
+        </div>
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- Blog-Section -->
+    <section class="blog-sec">
+      <div class="container">
+        <div class="blog-heading" data-aos="fade-right">
+          <h6>Latest Blog Post</h6>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-6">
+            <div
+              class="second-card"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
+              <div class="card-background position-relative">
+                <span
+                  class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
+                  >Exterior</span
+                >
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <span class="admin">Admin</span>
+                  <span class="mx-2">•</span>
+                  <span class="date">November 22, 2023</span>
+                </div>
+                <h6 class="title-card">
+                  BMW X5 Gold 2024 Sport Review: Light on Sport
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div
+              class="second-card"
+              data-aos="flip-left"
+              data-aos-duration="1500"
+            >
+              <div class="second-background position-relative">
+                <span
+                  class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
+                  >Exterior</span
+                >
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <span class="admin">Admin</span>
+                  <span class="mx-2">•</span>
+                  <span class="date">November 22, 2023</span>
+                </div>
+                <h6 class="title-card">
+                  BMW X5 Gold 2024 Sport Review: Light on Sport
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-12">
+            <div
+              class="second-card last-card"
+              data-aos="flip-right"
+              data-aos-duration="1500"
+            >
+              <div class="third-background position-relative">
+                <span
+                  class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
+                  >Exterior</span
+                >
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <span class="admin">Admin</span>
+                  <span class="mx-2">•</span>
+                  <span class="date">November 22, 2023</span>
+                </div>
+                <h6 class="title-card">
+                  BMW X5 Gold 2024 Sport Review: Light on Sport
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- finding-section -->
+    <section class="finding-sec">
+      <div class="container">
+        <div class="fin-cntn">
+          <div class="finding-heading">
+            <h4>
+              We make finding the
+              <span class="finding-sub">right car simple</span>
+            </h4>
+          </div>
+          <div class="finding-btn">
+            <a href="" class="more-btn"
+              >Find Out More <img src="./assets/white-arrow.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- join-section -->
+    <section class="join-sec">
+      <div class="container">
+        <div class="join-cntn">
+          <div class="join-heading" data-aos="fade-right">
+            <h6>Join CarHut</h6>
+            <p class="join-para">
+              Receive pricing updates, shopping tips & more!
+            </p>
+          </div>
+          <div class="signup-section" data-aos="fade-left">
+            <form class="signup-form">
+              <input type="email" placeholder="Your email address" />
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- premimum-section -->
+    <section class="premium-sec">
+      <div class="container">
+        <div class="premimum-seco">
+          <div class="premum-head" data-aos="fade-right">
+            <h5>Explore Our Premium Brands</h5>
+          </div>
+          <div class="premimum-button" data-aos="fade-left">
+            <a href="#" class="btn-tertiary">
+              Show All Brands <img src="./assets/card-btn.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brand-sec">
+      <div class="container">
+        <div class="brand-slider">
+          <div class="brand-part">
+            <div class="brand-img"><img src="./assets/b-1.png" alt="" /></div>
+            <div class="brand-img"><img src="./assets/b-2.png" alt="" /></div>
+            <div class="brand-img"><img src="./assets/b-3.png" alt="" /></div>
+            <div class="brand-img-4"><img src="./assets/b-4.png" alt="" /></div>
+            <div class="brand-img"><img src="./assets/b-5.png" alt="" /></div>
+            <div class="brand-img"><img src="./assets/b-6.png" alt="" /></div>
+
+            <!-- Duplicate logos for smooth looping -->
+            <div class="brand-img"><img src="./assets/b-1.png" alt="" /></div>
+            <div class="brand-img"><img src="./assets/b-2.png" alt="" /></div>
+            <div class="brand-img"><img src="./assets/b-3.png" alt="" /></div>
+            <div class="brand-img-4"><img src="./assets/b-4.png" alt="" /></div>
+            <div class="brand-img"><img src="./assets/b-5.png" alt="" /></div>
+            <div class="brand-img"><img src="./assets/b-6.png" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-sec">
+      <div class="container">
+        <div class="footer-top d-flex justify-content-between">
+          <div class="footer-logo">
+            <img src="./assets/Nav-logo.png" alt="" />
+          </div>
+          <div
+            class="footer-cntn d-flex align-items-start justify-content-lg-evenly"
+          >
+            <div class="address-logo">
+              <img src="./assets/location.png" alt="" />
+            </div>
+            <div class="address">
+              <p class="footer-para">Address</p>
+              <p class="footer-para">Oxford Ave. Cary, NC 27511</p>
+            </div>
+          </div>
+          <div class="footer-cntn d-flex align-items-start">
+            <div class="address-logo">
+              <img src="./assets/mail.png" alt="" />
+            </div>
+            <div class="address">
+              <p class="footer-para">Email</p>
+              <p class="footer-para">nwiger@yahoo.com</p>
+            </div>
+          </div>
+          <div class="footer-cntn d-flex align-items-start">
+            <div class="address-logo">
+              <img src="./assets/call.png" alt="" />
+            </div>
+            <div class="address">
+              <p class="footer-para">Phone</p>
+              <p class="footer-para">+537 547-6401</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-between">
+          <div class="footer-1">
+            <h5>
+              Lorem ipsum dolor sit amet consectetur. Nec magna non egestas in.
+              Enim habitant habitant id nec maecenas.
+            </h5>
+            <div class="footer-logo d-flex logo-social">
+              <div class="socal-logo">
+                <img src="./assets/Google Plus.png" alt="" />
+              </div>
+              <div class="socal-logo">
+                <img src="./assets/Facebook Circled.png" alt="" />
+              </div>
+              <div class="socal-logo">
+                <img src="./assets/LinkedIn Circled.png" alt="" />
+              </div>
+              <div class="socal-logo">
+                <img src="./assets/youtube.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="footer-2">
+            <ul>
+              <li class="footer-heading">Vehicles</li>
+              <li class="footer-link">About Us</li>
+              <li class="footer-link">Contact Us</li>
+              <li class="footer-link">Gallery</li>
+              <li class="footer-link">Blog</li>
+              <li class="footer-link">f.A.Q</li>
+            </ul>
+          </div>
+          <div class="footer-2">
+            <ul>
+              <li class="footer-heading">Vehicles</li>
+              <li class="footer-link">About Us</li>
+              <li class="footer-link">Contact Us</li>
+              <li class="footer-link">Gallery</li>
+              <li class="footer-link">Blog</li>
+              <li class="footer-link">f.A.Q</li>
+            </ul>
+          </div>
+          <div class="footer-3">
+            <div class="download-heading">
+              <h4>Download App</h4>
+              <div class="store google-play">
+                <img src="./assets/appstore.png" alt="" />
+              </div>
+              <div class="store">
+                <img src="./assets/playstore.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-last d-flex align-items-center justify-content-between"
+        >
+          <p class="copy">© 2025 exemple.com. All rights reserved.</p>
+
+          <ul class="terms d-flex justify-content-center">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><span>•</span></li>
+            <li><a href="#">Privacy Notice</a></li>
+          </ul>
+
+          <div class="scroll-top">
+            <a href="#top"><img src="./assets/scroll-top.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Aos Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- vanila js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <!-- Swipper-jS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Isotope JS CDN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Bootstrap  Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Js -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
