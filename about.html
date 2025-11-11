@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>carHut</title>
+    <!-- Fancybox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
     <!-- Bootstrap css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -96,7 +101,9 @@
       <div class="container">
         <div class="banner-cntn">
           <h1 class="banner-heading">About Us</h1>
-          <h2 class="banner-sub-heading">Home / About Us</h2>
+          <h2 class="banner-sub-heading">
+            <a href="index.html">Home </a> <a href="about.html">/ About Us</a>
+          </h2>
         </div>
       </div>
     </section>
@@ -145,37 +152,71 @@
     <section class="video-sec">
       <div class="container">
         <div class="video d-flex justify-content-center align-items-center">
-          <div class="video-icon">
-            <img src="./assets/about/video-Button.png" alt="" />
-          </div>
+          <a
+            data-fancybox="video-gallery"
+            data-caption="About Us Video"
+            href="./assets/about/istockphoto-1468523855-640_adpp_is.mp4"
+            class="video-icon"
+          >
+            <img src="./assets/about/video-Button.png" alt="Play Video" />
+          </a>
         </div>
       </div>
     </section>
+
     <!-- count-car -->
     <section class="count-car">
       <div class="container">
         <div class="row">
           <div class="col-4">
-               <div class="counter-cntn">
-            <h1>20k+</h1>
-            <p>Happy customers</p>
-          </div>
-          </div>
-          <div class="col-4">
-               <div class="counter-cntn">
-            <h1>540+</h1>
-            <p>Count of cars</p>
-          </div>
+            <div class="counter-cntn">
+              <h1>20k+</h1>
+              <p>Happy customers</p>
+            </div>
           </div>
           <div class="col-4">
-               <div class="counter-cntn">
-            <h1>25+</h1>
-            <p>Years of experince</p>
+            <div class="counter-cntn">
+              <h1>540+</h1>
+              <p>Count of cars</p>
+            </div>
           </div>
+          <div class="col-4">
+            <div class="counter-cntn">
+              <h1>25+</h1>
+              <p>Years of experince</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="iphone-sec">
+      <div class="container">
+        <div class="iphone-back">
+          <div class="iphone">
+            <img src="./assets/about/i-phone.png" alt="" />
+          </div>
+          <div class="iphone-cntn">
+            <p class="iphone-sub">Download our app</p>
+            <h2 class="iphone-heading">Download our app</h2>
+            <p class="iphone-para">
+              Turpis morbi enim nisi pulvinar leo dui tellus. Faucibus egestas
+              semper diam rutrum dictumst ut donec. Nisi nisi morbi vel in
+              vulputate. Nulla nam eget urna fusce vulputate at risus
+            </p>
+            <div class="store-sec d-flex">
+              <div class="playstore">
+                <img src="./assets/playstore.png" alt="" />
+              </div>
+              <div class="appstore">
+                <img src="./assets/appstore.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <!-- Aos Js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- vanila js -->
