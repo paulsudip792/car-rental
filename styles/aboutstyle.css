@@ -563,7 +563,7 @@ nav,
     height: 207px;
     position: absolute;
     bottom: 274.5px;
-    left: 42px;
+    left: 417px;
   }
   .iphone-cntn {
     padding: 64px 15px 15px 14px;
@@ -573,7 +573,7 @@ nav,
     height: 154px;
     position: absolute;
     bottom: 338.5px;
-    left: 30px;
+    left: 147px;
   }
   .iphone-back {
     background: var(--footer-color) no-repeat center / cover;
@@ -646,7 +646,7 @@ nav,
     height: 134px;
     position: absolute;
     bottom: 338.5px;
-    left: 30px;
+    left: 114px;
   }
   .iphone-back {
     background: var(--footer-color) no-repeat center / cover;
