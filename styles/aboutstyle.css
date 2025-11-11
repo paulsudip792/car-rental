@@ -326,12 +326,12 @@ nav,
 .appstore {
   width: 171px;
 }
-.playstore > a > img {
+.playstore > a>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.appstore > a > img {
+.appstore > a>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -558,6 +558,78 @@ nav,
     color: var(--secondary-color);
   }
   /* iphone-section */
+  .iphone {
+    width: 102px;
+    height: 207px;
+    position: absolute;
+    bottom: 274.5px;
+    left: 42px;
+  }
+  .iphone-cntn {
+    padding: 64px 15px 15px 14px;
+  }
+  .iphone {
+    width: 75px;
+    height: 154px;
+    position: absolute;
+    bottom: 338.5px;
+    left: 30px;
+  }
+  .iphone-back {
+    background: var(--footer-color) no-repeat center / cover;
+    width: 378px;
+    height: 386px;
+    border-radius: 40px;
+    position: relative;
+  }
+  .store-sec {
+    margin-top: 72px;
+  }
+  .iphone-cntn > .iphone-sub {
+    font-size: 17px;
+  }
+  .iphone-cntn > h2 {
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 17px;
+  }
+  .iphone-para {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .iphone-cntn > .iphone-heading {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 17px;
+  }
+  .iphone-sec {
+    padding: 137px 0 140px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* video-secton */
+  .video {
+    max-width: 1115px;
+    min-height: 162px;
+    background: url(../assets/about/video-background.png) no-repeat center /
+      cover;
+  }
+  /* count-car-section */
+  .counter-cntn > p {
+    font-size: 9px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    color: var(--secondary-color);
+  }
+  .counter-cntn > h1 {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    color: var(--tertiary-color);
+  }
   /* iphone-section */
   .iphone {
     width: 102px;
@@ -608,28 +680,6 @@ nav,
   }
   .iphone-sec {
     padding: 137px 0 140px;
-  }
-}
-@media screen and (max-width: 400px) {
-  /* video-secton */
-  .video {
-    max-width: 1115px;
-    min-height: 162px;
-    background: url(../assets/about/video-background.png) no-repeat center /
-      cover;
-  }
-  /* count-car-section */
-  .counter-cntn > p {
-    font-size: 9px;
-    font-weight: 700;
-    font-family: "DM Sans", sans-serif;
-    color: var(--secondary-color);
-  }
-  .counter-cntn > h1 {
-    font-size: 26px;
-    font-weight: 700;
-    font-family: "DM Sans", sans-serif;
-    color: var(--tertiary-color);
   }
 }
 @media screen and (max-width: 320px) {
