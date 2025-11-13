@@ -1203,7 +1203,7 @@ ul {
   font-family: "DM Sans", sans-serif;
   margin-bottom: 6px;
 }
-.footer-link>a:hover{
+.footer-link > a:hover {
   color: var(--btn-color);
 }
 .download-heading {
@@ -1412,6 +1412,27 @@ ul {
     font-weight: 500;
     color: var(--tertiary-color);
     text-align: center;
+  }
+  .custom-next {
+    right: 40%;
+    width: 20px !important;
+    height: 18px !important;
+  }
+  .custom-prev {
+    left: 35%;
+    width: 20px !important;
+    height: 18px !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    bottom: 0;
+    top: 97% !important;
+    transform: translateY(50%);
+    color: #000;
+    font-weight: bold;
+    z-index: 99;
   }
   /* team-section */
   .our-team {
@@ -1801,7 +1822,8 @@ ul {
     font-size: 15px;
     padding: 0 24px;
   }
-  .premum-head h5 {
+  /* premimum-section */
+  .premum-head >h5 {
     font-size: 28px;
     line-height: 34px;
   }
@@ -2340,7 +2362,7 @@ ul {
     width: 300px;
   }
   /* premum-sec */
-  .premum-head h5 {
+  .premum-head >h5 {
     font-size: 22px;
     line-height: 28px;
   }

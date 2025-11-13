@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carHut</title>
+    <!-- Fancybox CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+    />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font awasem cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Aos Css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swipper-css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./styles/vehicles.css" />
+  </head>
+  <body>
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="./assets/Nav-logo.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars text-white fs-2"></i
+            ></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <button
+              class="offcanvas-header me-auto bg-transparent border-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark text-white fs-2"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link first-link"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vehicles.html">Vehicles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Car Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">cart(0)</a>
+              </li>
+            </ul>
+            <div class="navbtn">
+              <a href="" class="btn-nav">Create Account</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Banner-section -->
+    <section class="banner-sec d-flex">
+      <div class="container">
+        <div class="banner-cntn">
+          <h1 class="banner-heading">Find Yor Dream</h1>
+          <h2 class="banner-sub-heading">Car- 2025</h2>
+        </div>
+      </div>
+    </section>
+    <!-- select-section -->
+    <section class="select-sec">
+      <div class="container">
+        <div class="select-heading"data-aos="fade-down"><h2>Select a vehicle group</h2></div>
+        <ul class="select-list d-flex flex-wrap justify-content-center gap-3">
+          <li>
+            <a href="#" class="select-btn" data-filter="*">All vehicles</a>
+          </li>
+          <li>
+            <a href="#" data-filter=".suv">
+              <div class="browse-btn d-flex align-items-center">
+                <img src="./assets/browse-btn-1.png" alt="icon" />
+                <span>SUV</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-filter=".sedan">
+              <div class="browse-btn d-flex align-items-center">
+                <img src="./assets/browse-btn-2.png" alt="icon" />
+                <span>Sedan</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-filter=".hatchback">
+              <div class="browse-btn d-flex align-items-center">
+                <img src="./assets/browse-btn-3.png" alt="icon" />
+                <span>Hatchback</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-filter=".hybrid">
+              <div class="browse-btn d-flex align-items-center">
+                <img src="./assets/browse-btn-4.png" alt="icon" />
+                <span>Hybrid</span>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-filter=".coupe">
+              <div class="browse-btn d-flex align-items-center">
+                <img src="./assets/browse-btn-3.png" alt="icon" />
+                <span>Coupe</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <!-- === Cards === -->
+        <div class="row" id="vehicle-list">
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item suv new"data-aos="flip-left">
+            <div class="card first">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (SUV)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item sedan used" data-aos="flip-right">
+            <div class="card second">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (Sedan)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item hatchback new"data-aos="flip-left">
+            <div class="card third">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (Hatchback)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item hybrid new" data-aos="flip-left">
+            <div class="card four">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (Hybrid)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item coupe used"data-aos="flip-right">
+            <div class="card five">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (Coupe)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item suv new"data-aos="flip-left">
+            <div class="card six">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (SUV)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item hatchback new"data-aos="flip-right">
+            <div class="card seven">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (Hatchback)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item hybrid used"data-aos="flip-left">
+            <div class="card eight">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (Hybrid)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-6 col-xl-4 element-item coupe new"data-aos="flip-right">
+            <div class="card nine">
+              <img
+                src="./assets/card-top.png"
+                class="card-img-top card-img"
+                alt="..."
+              />
+              <div class="card-body card-text">
+                <h5 class="card-title">C-Class – 2025 (Coupe)</h5>
+                <p class="card-text">
+                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
+                </p>
+                <div class="row">
+                  <div class="col-4">
+                    <img src="./assets/card-icon-1.png" alt="" />
+                    <p class="card-cntn">50 Miles</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-2.png" alt="" />
+                    <p class="card-cntn">Petrol</p>
+                  </div>
+                  <div class="col-4">
+                    <img src="./assets/card-icon-3.png" alt="" />
+                    <p class="card-cntn">Automatic</p>
+                  </div>
+                </div>
+                <h5 class="card-price">$150,000</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- premimum-section -->
+    <section class="premium-sec">
+      <div class="container">
+        <div class="premimum-seco">
+          <div class="premum-head"data-aos="fade-down-right">
+            <h5>Explore Our Premium Brands</h5>
+          </div>
+          <div class="premimum-button"data-aos="fade-down-left">
+            <a href="#" class="btn-tertiary">
+              Show All Brands <img src="./assets/card-btn.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- brand-section -->
+    <section class="brand-sec">
+      <div class="brand-slider">
+        <div class="brand-track">
+          <!-- One full set of logos -->
+          <div class="brand-img"><img src="./assets/b-1.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-2.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-3.png" alt="" /></div>
+          <div class="brand-img-4"><img src="./assets/b-4.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-5.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-6.png" alt="" /></div>
+        </div>
+
+        <!-- Duplicate track for seamless loop -->
+        <div class="brand-track">
+          <div class="brand-img"><img src="./assets/b-1.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-2.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-3.png" alt="" /></div>
+          <div class="brand-img-4"><img src="./assets/b-4.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-5.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-6.png" alt="" /></div>
+        </div>
+        <div class="brand-track">
+          <div class="brand-img"><img src="./assets/b-1.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-2.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-3.png" alt="" /></div>
+          <div class="brand-img-4"><img src="./assets/b-4.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-5.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-6.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- footer-section -->
+    <section class="footer-sec">
+      <div class="container">
+        <div class="footer-top d-flex justify-content-between">
+          <div class="footer-logo">
+            <a href=""><img src="./assets/Nav-logo.png" alt="" /></a>
+          </div>
+          <div
+            class="footer-cntn d-flex align-items-start justify-content-lg-evenly"
+          >
+            <div class="address-logo">
+              <a href=""><img src="./assets/location.png" alt="" /></a>
+            </div>
+            <div class="address">
+              <p class="footer-para">Address</p>
+              <p class="footer-para">Oxford Ave. Cary, NC 27511</p>
+            </div>
+          </div>
+          <div class="footer-cntn d-flex align-items-start">
+            <div class="address-logo">
+              <a href=""><img src="./assets/mail.png" alt="" /></a>
+            </div>
+            <div class="address">
+              <p class="footer-para">Email</p>
+              <p class="footer-para">nwiger@yahoo.com</p>
+            </div>
+          </div>
+          <div class="footer-cntn d-flex align-items-start">
+            <div class="address-logo">
+              <a href=""> <img src="./assets/call.png" alt="" /></a>
+            </div>
+            <div class="address">
+              <p class="footer-para">Phone</p>
+              <p class="footer-para">+537 547-6401</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-between">
+          <div class="footer-1">
+            <h5>
+              Lorem ipsum dolor sit amet consectetur. Nec magna non egestas in.
+              Enim habitant habitant id nec maecenas.
+            </h5>
+            <div class="footer-logo d-flex logo-social align-items-center">
+              <div class="socal-logo">
+                <a href=""> <img src="./assets/Google Plus.png" alt="" /></a>
+              </div>
+              <div class="socal-logo">
+                <a href=""
+                  ><img src="./assets/Facebook Circled.png" alt=""
+                /></a>
+              </div>
+              <div class="socal-logo">
+                <a href="">
+                  <img src="./assets/LinkedIn Circled.png" alt=""
+                /></a>
+              </div>
+              <div class="socal-logo">
+                <a href=""> <img src="./assets/youtube.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-2">
+            <ul>
+              <li class="footer-heading">Vehicles</li>
+              <li class="footer-link"><a href="">About Us</a></li>
+              <li class="footer-link"><a href="">Contact Us</a></li>
+              <li class="footer-link"><a href="">Gallery</a></li>
+              <li class="footer-link"><a href="">Blog</a></li>
+              <li class="footer-link"><a href="">f.A.Q</a></li>
+            </ul>
+          </div>
+          <div class="footer-2">
+            <ul>
+              <li class="footer-heading">Vehicles</li>
+              <li class="footer-link"><a href="">About Us</a></li>
+              <li class="footer-link"><a href="">Contact Us</a></li>
+              <li class="footer-link"><a href="">Gallery</a></li>
+              <li class="footer-link"><a href="">Blog</a></li>
+              <li class="footer-link"><a href="">f.A.Q</a></li>
+            </ul>
+          </div>
+          <div class="footer-3">
+            <div class="download-heading">
+              <h4>Download App</h4>
+              <div class="store google-play">
+                <a href=""> <img src="./assets/appstore.png" alt="" /></a>
+              </div>
+              <div class="store">
+                <a href=""><img src="./assets/playstore.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-last d-flex align-items-center justify-content-between"
+        >
+          <a href="">
+            <p class="copy">© 2025 exemple.com. All rights reserved.</p></a
+          >
+
+          <ul class="terms d-flex justify-content-center">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><span>•</span></li>
+            <li><a href="#">Privacy Notice</a></li>
+          </ul>
+
+          <div class="scroll-top">
+            <a href="#top"><img src="./assets/scroll-top.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Aos Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- vanila js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <!-- Swipper-jS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Isotope JS CDN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Bootstrap  Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Js -->
+    <script src="./js/vehicles.js"></script>
+  </body>
+</html>
