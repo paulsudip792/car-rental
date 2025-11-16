@@ -1,31 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-   // Aos js
-  // Initialize Isotope
-  var iso = new Isotope("#vehicle-list", {
-    itemSelector: ".element-item",
-    layoutMode: "fitRows",
-  });
-
-  // Filter functionality
-  var filtersElem = document.querySelector("#filters");
-  filtersElem.addEventListener("click", function (event) {
-    if (!event.target.classList.contains("expo-list")) return;
-
-    var filterValue = event.target.getAttribute("data-filter");
-
-    // “In Stock”
-    if (filterValue === "*") {
-      iso.arrange({ filter: "*" });
-    } else {
-      iso.arrange({ filter: filterValue });
-    }
-
-    // active class toggle
-    document
-      .querySelectorAll(".expo-list")
-      .forEach((btn) => btn.classList.remove("active"));
-    event.target.classList.add("active");
-  });
+  // Aos js
+  AOS.init();
   // Initialize Swiper
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 4,
@@ -109,5 +84,11 @@ document.addEventListener("DOMContentLoaded", () => {
     glare: true, // enables glare effect
     "max-glare": 0.3, // maximum glare opacity
     scale: 1.05, // slightly zoom in while tilting
-  });  
+  });
+  setTimeout(function () {
+    var modal = new bootstrap.Modal(
+      document.getElementById("createAccountModal")
+    );
+    modal.show();
+  }, 2000); 
 });

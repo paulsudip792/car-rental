@@ -87,4 +87,3 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Aos js
 AOS.init();
-AOS.refresh();

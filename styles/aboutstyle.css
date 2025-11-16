@@ -73,9 +73,8 @@ nav,
 }
 
 .btn-nav:hover {
-  color: #fff;
+  color: var(--primary-color);
 }
-
 .btn-nav:hover::before {
   width: 100%;
 }
@@ -103,8 +102,8 @@ nav,
 }
 .navbar-nav {
   border: 1px solid var(--primary-color);
-  max-width: 784px;
-  padding: 17px 27px;
+  width: 662px !important;
+  padding: 17px 27px 17px 0;
   margin: 0 auto;
   align-items: center;
   border-radius: 68px;
@@ -139,6 +138,7 @@ nav,
 .navbar-nav > li > .nav-item:last-child {
   margin: 0 !important;
 }
+/* hover-effect nav-link*/
 .nav-link::before,
 .nav-link::after {
   content: "";
@@ -248,21 +248,21 @@ nav,
 /* Social icons */
 .social-icons i {
   font-size: 30px;
-  background: white;
+  background: var(--primary-color);
   padding: 10px;
   width: 48px;
   height: 48px;
   line-height: 28px;
   border-radius: 50%;
   margin: 0 8px;
-  color: #00c07a;
+  color: var(--btn-color);
   cursor: pointer;
 }
 
 .small-text {
   margin-top: 18px;
   margin-bottom: 25px;
-  color: white;
+  color: var(--primary-color);
   opacity: 0.8;
   font-size: 14px;
 }
@@ -305,18 +305,54 @@ nav,
   background: transparent;
   border: none;
   font-size: 28px;
-  color: white;
+  color: var(--primary-color);
   cursor: pointer;
   z-index: 10;
 }
 
 .close-right-btn:hover {
-  color: #000;
+  color: var(--secondary-color);
   transform: scale(1.1);
   transition: 0.3s;
 }
 .modal-dialog {
   margin: 40px auto !important;
+}
+.left-btn,
+.right-btn {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+/* Hover Effect Background Fill */
+.left-btn::before,
+.right-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0%;
+  height: 100%;
+  background: var(--btn-color);
+  transition: width 0.5s ease;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: inherit;
+}
+
+/* Text color change on hover */
+.left-btn:hover,
+.right-btn:hover {
+  color: var(--primary-color) !important;
+  border-color: var(--looking);
+}
+
+/* Fill animation */
+.left-btn:hover::before,
+.right-btn:hover::before {
+  width: 100%;
 }
 /* Banner-Section */
 .banner-sec {
@@ -590,7 +626,7 @@ nav,
 }
 
 .check {
-  color: #6a5af9;
+  color: var(--line-color);
   font-size: 14px;
 }
 
@@ -620,7 +656,7 @@ nav,
   bottom: 0; /* Arrows move to bottom */
   top: 93% !important;
   transform: translateY(50%);
-  color: #000; /* arrow color */
+  color: var(--secondary-color);
   font-weight: bold;
   z-index: 99;
 }
@@ -699,7 +735,7 @@ nav,
   top: 50%;
   transform: translateY(-50%);
   background-color: #00c389; /* green background */
-  color: #fff;
+  color: var(--primary-color);
   font-size: 20px;
   font-weight: 600;
   width: 28px;
@@ -714,7 +750,7 @@ nav,
 /* Change to "-" when open */
 .accordion-button:not(.collapsed)::before {
   content: "–";
-  background-color: #00c389;
+  background-color: var(--looking);
 }
 
 /* Keep open button styling consistent */
@@ -1184,7 +1220,7 @@ nav,
     bottom: 0;
     top: 97% !important;
     transform: translateY(50%);
-    color: #000;
+    color: var(--secondary-color);
     font-weight: bold;
     z-index: 99;
   }
@@ -1469,7 +1505,7 @@ nav,
     background: transparent;
     border: none;
     font-size: 28px;
-    color: white;
+    color: var(--primary-color);
     cursor: pointer;
     z-index: 78;
   }
@@ -1844,8 +1880,8 @@ nav,
     right: 5px;
     top: 18%;
     transform: translateY(-50%);
-    background-color: #00c389;
-    color: #fff;
+    background-color: var(--looking);
+    color: var(--primary-color);
     font-size: 16px;
     font-weight: 600;
     width: 22px;
@@ -1997,11 +2033,11 @@ nav,
     font-size: 15px;
   }
 
-    .social-icons i {
-        width: 43px;
-        height: 41px;
-        font-size: 24px;
-    }
+  .social-icons i {
+    width: 43px;
+    height: 41px;
+    font-size: 24px;
+  }
   /* video-secton */
   .video {
     max-width: 1115px;
@@ -2169,14 +2205,14 @@ nav,
     padding: 8px 20px;
   }
 
-    .social-icons i {
-        width: 43px;
-        height: 41px;
-        font-size: 24px;
-    }
+  .social-icons i {
+    width: 43px;
+    height: 41px;
+    font-size: 24px;
+  }
 }
 @media screen and (max-width: 320px) {
-    /* modal */
+  /* modal */
   .modal-dialog {
     margin: 10px auto !important;
   }
@@ -2190,11 +2226,11 @@ nav,
     font-size: 18px;
   }
 
-     .social-icons i {
-        width: 43px;
-        height: 41px;
-        font-size: 24px;
-    }
+  .social-icons i {
+    width: 43px;
+    height: 41px;
+    font-size: 24px;
+  }
 
   .input-line {
     width: 100%;

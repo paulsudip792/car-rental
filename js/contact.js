@@ -1,6 +1,5 @@
 // Aos js
 AOS.init();
-AOS.refresh();
 // vanila js
 VanillaTilt.init(document.querySelector(".choose-main"), {
   max: 25, // maximum tilt rotation (degrees)

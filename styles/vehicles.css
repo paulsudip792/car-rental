@@ -73,7 +73,7 @@ nav,
 }
 
 .btn-nav:hover {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .btn-nav:hover::before {
@@ -103,8 +103,8 @@ nav,
 }
 .navbar-nav {
   border: 1px solid var(--primary-color);
-  max-width: 784px;
-  padding: 17px 27px;
+  width: 662px !important;
+  padding: 17px 27px 17px 0;
   margin: 0 auto;
   align-items: center;
   border-radius: 68px;
@@ -312,12 +312,48 @@ nav,
 }
 
 .close-right-btn:hover {
-  color: #000;
+  color: var(--secondary-color);
   transform: scale(1.1);
   transition: 0.3s;
 }
 .modal-dialog {
   margin: 40px auto !important;
+}
+.left-btn,
+.right-btn {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+/* Hover Effect Background Fill */
+.left-btn::before,
+.right-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0%;
+  height: 100%;
+  background: var(--btn-color);
+  transition: width 0.5s ease;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: inherit;
+}
+
+/* Text color change on hover */
+.left-btn:hover,
+.right-btn:hover {
+  color:var(--primary-color) !important;
+  border-color: var(--btn-color);
+}
+
+/* Fill animation */
+.left-btn:hover::before,
+.right-btn:hover::before {
+  width: 100%;
 }
 /* Banner-Section */
 .banner-sec {
@@ -754,7 +790,7 @@ nav,
 }
 
 .scroll-top a {
-  background-color: #00c28c; /* green arrow */
+  background-color: var(--btn-color); 
   color: var(--primary-color);
   width: 40px;
   height: 40px;
@@ -767,7 +803,7 @@ nav,
 }
 
 .scroll-top a:hover {
-  background-color: #00a876;
+  background-color: var(--btn-color);
 }
 .scroll-top {
   width: 54px;
@@ -1026,7 +1062,7 @@ nav,
     background: transparent;
     border: none;
     font-size: 28px;
-    color: white;
+    color: var(--primary-color);
     cursor: pointer;
     z-index: 78;
   }
@@ -1317,7 +1353,7 @@ nav,
     background: transparent;
     border: none;
     font-size: 28px;
-    color: white;
+    color: var(--primary-color);
     cursor: pointer;
     z-index: 78;
   }

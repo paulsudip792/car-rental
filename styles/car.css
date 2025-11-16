@@ -75,7 +75,7 @@ nav,
 }
 
 .btn-nav:hover {
-  color: #fff;
+  color: var(--primary-color);
 }
 
 .btn-nav:hover::before {
@@ -105,8 +105,8 @@ nav,
 }
 .navbar-nav {
   border: 1px solid var(--primary-color);
-  max-width: 784px;
-  padding: 17px 27px;
+ width: 662px !important;
+  padding: 17px 27px 17px 0;
   margin: 0 auto;
   align-items: center;
   border-radius: 68px;
@@ -314,12 +314,48 @@ nav,
 }
 
 .close-right-btn:hover {
-  color: #000;
+  color: var(--secondary-color);
   transform: scale(1.1);
   transition: 0.3s;
 }
 .modal-dialog {
   margin: 40px auto !important;
+}
+.left-btn,
+.right-btn {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+/* Hover Effect Background Fill */
+.left-btn::before,
+.right-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0%;
+  height: 100%;
+  background: var(--btn-color);
+  transition: width 0.5s ease;
+  transform: translateX(-50%);
+  z-index: -1;
+  border-radius: inherit;
+}
+
+/* Text color change on hover */
+.left-btn:hover,
+.right-btn:hover {
+  color: var(--primary-color) !important;
+  border-color: var(--looking);
+}
+
+/* Fill animation */
+.left-btn:hover::before,
+.right-btn:hover::before {
+  width: 100%;
 }
 /* Banner-Section */
 .banner-sec {
@@ -451,7 +487,7 @@ nav,
   border-color: #00b67a; /* border match */
   transform: translateY(-3px); /* smooth lift */
   box-shadow: 0 6px 15px rgba(0, 182, 122, 0.4);
-  color: #fff;
+  color: var(--primary-color);
 }
 .tick-section img {
   width: 22px;
@@ -619,7 +655,7 @@ nav,
   bottom: 0;
   width: 100%;
   height: 1px;
-  background-color: #405ff2;
+  background-color: var(--line-color);
   border-radius: 2px;
 }
 .w-20 {
@@ -645,7 +681,7 @@ nav,
 }
 
 .car-varient:hover {
-  color: #405ff2;
+  color: var(--line-color);
   cursor: pointer;
 }
 /* premimum-section */
@@ -1195,7 +1231,7 @@ nav,
     background: transparent;
     border: none;
     font-size: 28px;
-    color: white;
+    color: var(--primary-color);
     cursor: pointer;
     z-index: 78;
   }
@@ -1589,7 +1625,7 @@ nav,
     background: transparent;
     border: none;
     font-size: 28px;
-    color: white;
+    color: var(--primary-color);
     cursor: pointer;
     z-index: 78;
   }

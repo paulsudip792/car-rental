@@ -19,4 +19,4 @@ filterButtons.forEach(function (btn) {
 });
 // Aos js
 AOS.init();
-AOS.refresh();
+
