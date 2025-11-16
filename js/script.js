@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
    // Aos js
-  AOS.init();
   // Initialize Isotope
   var iso = new Isotope("#vehicle-list", {
     itemSelector: ".element-item",
@@ -110,8 +109,5 @@ document.addEventListener("DOMContentLoaded", () => {
     glare: true, // enables glare effect
     "max-glare": 0.3, // maximum glare opacity
     scale: 1.05, // slightly zoom in while tilting
-  });
-
-  AOS.refresh();
-  
+  });  
 });

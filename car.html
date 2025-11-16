@@ -32,7 +32,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <!-- Custom Css -->
-    <link rel="stylesheet" href="./styles/vehicles.css" />
+    <link rel="stylesheet" href="./styles/car.css" />
   </head>
   <body>
     <header class="hdr-sec">
@@ -163,370 +163,293 @@
     <section class="banner-sec d-flex">
       <div class="container">
         <div class="banner-cntn">
-          <h1 class="banner-heading">Find Yor Dream</h1>
-          <h2 class="banner-sub-heading">Car- 2025</h2>
+          <h1 class="banner-heading">
+            <a href="index.html">Home </a> / Details
+          </h1>
         </div>
       </div>
     </section>
-    <!-- select-section -->
-    <section class="select-sec">
+    <!-- BMW section -->
+    <section class="bmw-sec">
       <div class="container">
-        <div class="select-heading" data-aos="fade-down">
-          <h2>Select a vehicle group</h2>
+        <div class="row align-items-start">
+          <!-- LEFT -->
+          <div class="col-5">
+            <div class="bmw-heading">
+              <h2>BMW</h2>
+              <p>$25 <span class="bm">/day</span></p>
+            </div>
+
+            <div class="bmw-btn">
+              <a href="" class="btn-bmw">Rent A Car</a>
+            </div>
+
+            <div class="bmw-img main-img-wrap">
+              <img src="./assets/car/bmw-img.png" alt="" />
+            </div>
+
+            <div class="drive-bmw d-flex">
+              <div class="bm1">
+                <img src="./assets/car/bmw-1.png" alt="" />
+              </div>
+              <div class="bm1">
+                <img src="./assets/car/bmw-2.png" alt="" />
+              </div>
+              <div class="bm1">
+                <img src="./assets/car/bmw-3.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-7">
+            <div class="bmw-specification">
+              <h2>Technical Specification</h2>
+            </div>
+
+            <div class="box-sec sec-box d-flex justify-content-between">
+              <div class="box shadow-box">
+                <div class="box-icon">
+                  <img src="./assets/car/icon-1.png" />
+                </div>
+                <p class="box-heading">Gear Box</p>
+                <p class="box-subheading">Automat</p>
+              </div>
+
+              <div class="box shadow-box">
+                <div class="box-icon">
+                  <img src="./assets/car/icon-2.png" />
+                </div>
+                <p class="box-heading">Fuel</p>
+                <p class="box-subheading">Petrol</p>
+              </div>
+
+              <div class="box shadow-box">
+                <div class="box-icon">
+                  <img src="./assets/car/icon-3.png" />
+                </div>
+                <p class="box-heading">Doors</p>
+                <p class="box-subheading">2</p>
+              </div>
+            </div>
+
+            <div class="box-sec sec-box d-flex justify-content-between">
+              <div class="box shadow-box">
+                <div class="box-icon">
+                  <img src="./assets/car/icon-4.png" />
+                </div>
+                <p class="box-heading">Air Conditioner</p>
+                <p class="box-subheading">Yes</p>
+              </div>
+
+              <div class="box shadow-box">
+                <div class="box-icon">
+                  <img src="./assets/car/icon-5.png" />
+                </div>
+                <p class="box-heading">Seats</p>
+                <p class="box-subheading">5</p>
+              </div>
+
+              <div class="box shadow-box">
+                <div class="box-icon">
+                  <img src="./assets/car/icon-6.png" />
+                </div>
+                <p class="box-heading">Distance</p>
+                <p class="box-subheading">500</p>
+              </div>
+            </div>
+
+            <div class="equipment-heading">
+              <h2>Car Equipment</h2>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <div class="tick-section">
+                  <img src="./assets/car/tick.png" alt="" />
+                  <p>ABS</p>
+                </div>
+                <div class="tick-section">
+                  <img src="./assets/car/tick.png" />
+                  <p>Air Bags</p>
+                </div>
+                <div class="tick-section">
+                  <img src="./assets/car/tick.png" />
+                  <p>Cruise Control</p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="tick-section">
+                  <img src="./assets/car/tick.png" />
+                  <p>ABS</p>
+                </div>
+                <div class="tick-section">
+                  <img src="./assets/car/tick.png" />
+                  <p>Air Bags</p>
+                </div>
+                <div class="tick-section">
+                  <img src="./assets/car/tick.png" />
+                  <p>Air Conditioner</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul class="select-list d-flex flex-wrap justify-content-center gap-3">
-          <li>
-            <a href="#" class="select-btn" data-filter="*">All vehicles</a>
-          </li>
-          <li>
-            <a href="#" data-filter=".suv">
-              <div class="browse-btn d-flex align-items-center">
-                <img src="./assets/browse-btn-1.png" alt="icon" />
-                <span>SUV</span>
+      </div>
+    </section>
+    <!-- browse-section -->
+    <section class="browse-sec">
+      <div class="container">
+        <div class="browse-heading" data-aos="fade-down-right">
+          <h5>Browse by Type</h5>
+        </div>
+
+        <!-- Top two cards -->
+        <div class="browse-top">
+          <div class="row">
+            <div class="col-sm-12 col-xxl-6">
+              <div class="browse-top-left" data-aos="flip-left">
+                <img src="./assets/browse-1.png" alt="Car" class="browse-img" />
+                <div class="browse-btn d-flex align-items-center">
+                  <img src="./assets/browse-btn-1.png" alt="icon" />
+                  <span>SUV</span>
+                </div>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-filter=".sedan">
-              <div class="browse-btn d-flex align-items-center">
-                <img src="./assets/browse-btn-2.png" alt="icon" />
-                <span>Sedan</span>
+            </div>
+
+            <div class="col-sm-12 col-xxl-6">
+              <div class="browse-top-left" data-aos="flip-right">
+                <img src="./assets/browse-2.png" alt="Car" class="browse-img" />
+                <div class="browse-btn d-flex align-items-center">
+                  <img src="./assets/browse-btn-2.png" alt="icon" />
+                  <span>Sedan</span>
+                </div>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-filter=".hatchback">
-              <div class="browse-btn d-flex align-items-center">
-                <img src="./assets/browse-btn-3.png" alt="icon" />
-                <span>Hatchback</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom three cards -->
+        <div class="browse-bottom">
+          <div class="row">
+            <div class="col-lg-6 col-xxl-4">
+              <div class="browse-1" data-aos="flip-right">
+                <img src="./assets/browse-3.png" alt="Car" class="browse-img" />
+                <div class="browse-btn d-flex align-items-center">
+                  <img src="./assets/browse-btn-3.png" alt="icon" />
+                  <span>Hatchback</span>
+                </div>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-filter=".hybrid">
-              <div class="browse-btn d-flex align-items-center">
-                <img src="./assets/browse-btn-4.png" alt="icon" />
-                <span>Hybrid</span>
+            </div>
+
+            <div class="col-lg-6 col-xxl-4">
+              <div class="browse-1" data-aos="flip-right">
+                <img src="./assets/browse-4.png" alt="Car" class="browse-img" />
+                <div class="browse-btn d-flex align-items-center">
+                  <img src="./assets/browse-btn-4.png" alt="icon" />
+                  <span>Hybrid</span>
+                </div>
               </div>
-            </a>
-          </li>
-          <li>
-            <a href="#" data-filter=".coupe">
-              <div class="browse-btn d-flex align-items-center">
-                <img src="./assets/browse-btn-3.png" alt="icon" />
-                <span>Coupe</span>
+            </div>
+
+            <div class="col-lg-12 col-xxl-4">
+              <div class="browse-1 lase-browse" data-aos="flip-right">
+                <img src="./assets/browse-5.png" alt="Car" class="browse-img" />
+                <div class="browse-btn d-flex align-items-center">
+                  <img src="./assets/browse-btn-5.png" alt="icon" />
+                  <span>Coupe</span>
+                </div>
               </div>
-            </a>
-          </li>
+            </div>
+          </div>
+        </div>
+
+        <!-- View All button -->
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Shopbox-Section -->
+    <section class="shopbox-sec">
+      <div class="container">
+        <div class="shop-heading" data-aos="fade-down-right">
+          <h4>Shop Box Car Your Way</h4>
+        </div>
+        <ul class="shop-top d-flex">
+          <li class="shop-link active">New Cars For Sale</li>
+          <li class="shop-link">Used Cars For Sale</li>
+          <li class="shop-link">Browse By Type</li>
+          <li class="shop-link">Browse By Brand</li>
         </ul>
-
-        <!-- === Cards === -->
-        <div class="row" id="vehicle-list">
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item suv new"
-            data-aos="flip-left"
-          >
-            <div class="card first">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (SUV)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
+        <div class="row gy-3">
+          <!-- Column 1 -->
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Ford Cars</li>
+              <li class="car-varient">Honda Cars</li>
+              <li class="car-varient">Hyundai Cars</li>
+              <li class="car-varient">Infiniti Cars</li>
+              <li class="car-varient">Jaguar Cars</li>
+              <li class="car-varient">Jeep Cars</li>
+            </ul>
           </div>
 
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item sedan used"
-            data-aos="flip-right"
-          >
-            <div class="card second">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (Sedan)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
+          <!-- Column 2 -->
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Chrysler Cars</li>
+              <li class="car-varient">Citroen Cars</li>
+              <li class="car-varient">Cupra Cars</li>
+              <li class="car-varient">Dacia Cars</li>
+              <li class="car-varient">DS Cars</li>
+              <li class="car-varient">Fiat Cars</li>
+            </ul>
           </div>
 
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item hatchback new"
-            data-aos="flip-left"
-          >
-            <div class="card third">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (Hatchback)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
+          <!-- Column 3 -->
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Land Rover Cars</li>
+              <li class="car-varient">Lexus Cars</li>
+              <li class="car-varient">Mercedes-Benz Cars</li>
+              <li class="car-varient">Mazda Cars</li>
+              <li class="car-varient">MG Cars</li>
+              <li class="car-varient">Kia Cars</li>
+            </ul>
           </div>
 
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item hybrid new"
-            data-aos="flip-left"
-          >
-            <div class="card four">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (Hybrid)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
+          <!-- Column 4 -->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Abarth Cars</li>
+              <li class="car-varient">Romeo Cars</li>
+              <li class="car-varient">Audi Cars</li>
+              <li class="car-varient">Bentley Cars</li>
+              <li class="car-varient">BMW Cars</li>
+              <li class="car-varient">Chevrolet Cars</li>
+            </ul>
           </div>
 
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item coupe used"
-            data-aos="flip-right"
-          >
-            <div class="card five">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (Coupe)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
+          <!-- Column 5 -->
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl last-shop">
+            <ul class="car-type list-unstyled">
+              <li class="car-varient">Mini Cars</li>
+              <li class="car-varient">Mitsubishi Cars</li>
+              <li class="car-varient">Nissan Cars</li>
+              <li class="car-varient">Peugeot Cars</li>
+              <li class="car-varient">Porsche Cars</li>
+              <li class="car-varient">Renault Cars</li>
+            </ul>
           </div>
-
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item suv new"
-            data-aos="flip-left"
-          >
-            <div class="card six">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (SUV)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item hatchback new"
-            data-aos="flip-right"
-          >
-            <div class="card seven">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (Hatchback)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item hybrid used"
-            data-aos="flip-left"
-          >
-            <div class="card eight">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (Hybrid)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="col-sm-12 col-lg-6 col-xl-4 element-item coupe new"
-            data-aos="flip-right"
-          >
-            <div class="card nine">
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
-              <div class="card-body card-text">
-                <h5 class="card-title">C-Class – 2025 (Coupe)</h5>
-                <p class="card-text">
-                  4.0 D5 PowerPulse Momentum 5dr AWD… Geartronic Estate
-                </p>
-                <div class="row">
-                  <div class="col-4">
-                    <img src="./assets/card-icon-1.png" alt="" />
-                    <p class="card-cntn">50 Miles</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-2.png" alt="" />
-                    <p class="card-cntn">Petrol</p>
-                  </div>
-                  <div class="col-4">
-                    <img src="./assets/card-icon-3.png" alt="" />
-                    <p class="card-cntn">Automatic</p>
-                  </div>
-                </div>
-                <h5 class="card-price">$150,000</h5>
-              </div>
-            </div>
-          </div>
+        </div>
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt=""
+          /></a>
         </div>
       </div>
     </section>
@@ -707,6 +630,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- Custom Js -->
-    <script src="./js/vehicles.js"></script>
+    <script src="./js/car.js"></script>
   </body>
 </html>

@@ -67,7 +67,10 @@
             </button>
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link first-link" aria-current="page" href="index.html"
+                <a
+                  class="nav-link first-link"
+                  aria-current="page"
+                  href="index.html"
                   >Home</a
                 >
               </li>
@@ -78,22 +81,85 @@
                 <a class="nav-link" href="vehicles.html">Vehicles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Car Details</a>
+                <a class="nav-link" href="car.html">Car Details</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">cart(0)</a>
               </li>
             </ul>
             <div class="navbtn">
-              <a href="" class="btn-nav">Create Account</a>
+              <a
+                class="btn-nav"
+                data-bs-toggle="modal"
+                data-bs-target="#createAccountModal"
+              >
+                Create Account
+              </a>
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <!--  Modal -->
+    <div class="modal fade" id="createAccountModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content ca-modal">
+          <!-- LEFT AREA -->
+          <div class="ca-left">
+            <h1>Welcome Back</h1>
+            <p class="sub-txt">
+              to keep connected with us please login <br />
+              with your personal info
+            </p>
+
+            <button class="left-btn">SIGN IN</button>
+
+            <div class="ca-car">
+              <img src="./assets/modal-car.png" alt="" />
+            </div>
+          </div>
+
+          <div class="ca-right">
+            <h1>Create Account</h1>
+
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+
+            <p class="small-text">or use your email for registration</p>
+
+            <div class="input-line">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div>
+
+            <div class="input-line">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+
+            <div class="input-line">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+
+            <button class="right-btn">SIGN IN</button>
+            <button
+              class="close-right-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Banner-Section -->
     <section class="banner-sec d-flex">
       <div class="container">
@@ -145,16 +211,13 @@
         </ul>
         <div class="row" id="vehicle-list">
           <div class="col-sm-12 col-lg-6 col-xl-4 element-item new">
-            <div
-              class="card first"
-              data-aos="flip-left"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
+            <div class="card first" data-aos="flip-left">
+              <a href="">
+                <img
+                  src="./assets/card-top.png"
+                  class="card-img-top card-img"
+                  alt="..."
+              /></a>
               <div class="card-body card-text">
                 <h5 class="card-title">C-Class – 2025</h5>
                 <p class="card-text">
@@ -179,16 +242,13 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg-6 col-xl-4 element-item used">
-            <div
-              class="card second"
-              data-aos="flip-right"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
+            <div class="card second" data-aos="flip-right">
+              <a href="">
+                <img
+                  src="./assets/card-top.png"
+                  class="card-img-top card-img"
+                  alt="..."
+              /></a>
               <div class="card-body card-text">
                 <h5 class="card-title">C-Class – 2025</h5>
                 <p class="card-text">
@@ -213,16 +273,13 @@
             </div>
           </div>
           <div class="col-sm-12 col-lg-12 col-xl-4 element-item new">
-            <div
-              class="card third"
-              data-aos="flip-left"
-              data-aos-duration="1500"
-            >
-              <img
-                src="./assets/card-top.png"
-                class="card-img-top card-img"
-                alt="..."
-              />
+            <div class="card third" data-aos="flip-left">
+              <a href="">
+                <img
+                  src="./assets/card-top.png"
+                  class="card-img-top card-img"
+                  alt="..."
+              /></a>
               <div class="card-body card-text">
                 <h5 class="card-title">C-Class – 2025</h5>
                 <p class="card-text">
@@ -322,7 +379,7 @@
         </ul>
         <div class="row gy-3">
           <!-- Column 1 -->
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl">
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl">
             <ul class="car-type list-unstyled">
               <li class="car-varient">Ford Cars</li>
               <li class="car-varient">Honda Cars</li>
@@ -334,7 +391,7 @@
           </div>
 
           <!-- Column 2 -->
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl">
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl">
             <ul class="car-type list-unstyled">
               <li class="car-varient">Chrysler Cars</li>
               <li class="car-varient">Citroen Cars</li>
@@ -346,7 +403,7 @@
           </div>
 
           <!-- Column 3 -->
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl">
+          <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl">
             <ul class="car-type list-unstyled">
               <li class="car-varient">Land Rover Cars</li>
               <li class="car-varient">Lexus Cars</li>
@@ -358,7 +415,7 @@
           </div>
 
           <!-- Column 4 -->
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl">
             <ul class="car-type list-unstyled">
               <li class="car-varient">Abarth Cars</li>
               <li class="car-varient">Romeo Cars</li>
@@ -370,7 +427,7 @@
           </div>
 
           <!-- Column 5 -->
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl last-shop">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl last-shop">
             <ul class="car-type list-unstyled">
               <li class="car-varient">Mini Cars</li>
               <li class="car-varient">Mitsubishi Cars</li>
@@ -391,11 +448,7 @@
     <!-- loan-section -->
     <section class="loan-sec">
       <div class="container">
-        <div
-          class="row loan-card g-0"
-          data-aos="zoom-in"
-          data-aos-duration="1500"
-        >
+        <div class="row loan-card g-0" data-aos="zoom-in">
           <!-- Left Image -->
           <div class="col-sm-12 col-md-6 loan-image">
             <img src="./assets/loan-image.png" alt="Car Loan" />
@@ -480,11 +533,7 @@
         <div class="browse-top">
           <div class="row">
             <div class="col-sm-12 col-xxl-6">
-              <div
-                class="browse-top-left"
-                data-aos="flip-left"
-                data-aos-duration="1500"
-              >
+              <div class="browse-top-left" data-aos="flip-left">
                 <img src="./assets/browse-1.png" alt="Car" class="browse-img" />
                 <div class="browse-btn d-flex align-items-center">
                   <img src="./assets/browse-btn-1.png" alt="icon" />
@@ -494,11 +543,7 @@
             </div>
 
             <div class="col-sm-12 col-xxl-6">
-              <div
-                class="browse-top-left"
-                data-aos="flip-right"
-                data-aos-duration="1500"
-              >
+              <div class="browse-top-left" data-aos="flip-right">
                 <img src="./assets/browse-2.png" alt="Car" class="browse-img" />
                 <div class="browse-btn d-flex align-items-center">
                   <img src="./assets/browse-btn-2.png" alt="icon" />
@@ -513,11 +558,7 @@
         <div class="browse-bottom">
           <div class="row">
             <div class="col-lg-6 col-xxl-4">
-              <div
-                class="browse-1"
-                data-aos="flip-right"
-                data-aos-duration="1500"
-              >
+              <div class="browse-1" data-aos="flip-right">
                 <img src="./assets/browse-3.png" alt="Car" class="browse-img" />
                 <div class="browse-btn d-flex align-items-center">
                   <img src="./assets/browse-btn-3.png" alt="icon" />
@@ -527,11 +568,7 @@
             </div>
 
             <div class="col-lg-6 col-xxl-4">
-              <div
-                class="browse-1"
-                data-aos="flip-right"
-                data-aos-duration="1500"
-              >
+              <div class="browse-1" data-aos="flip-right">
                 <img src="./assets/browse-4.png" alt="Car" class="browse-img" />
                 <div class="browse-btn d-flex align-items-center">
                   <img src="./assets/browse-btn-4.png" alt="icon" />
@@ -541,11 +578,7 @@
             </div>
 
             <div class="col-lg-12 col-xxl-4">
-              <div
-                class="browse-1 lase-browse"
-                data-aos="flip-right"
-                data-aos-duration="1500"
-              >
+              <div class="browse-1 lase-browse" data-aos="flip-right">
                 <img src="./assets/browse-5.png" alt="Car" class="browse-img" />
                 <div class="browse-btn d-flex align-items-center">
                   <img src="./assets/browse-btn-5.png" alt="icon" />
@@ -555,8 +588,6 @@
             </div>
           </div>
         </div>
-
-        <!-- View All button -->
         <div class="card-btn">
           <a href="#" class="btn-tertiary">
             View all <img src="./assets/card-btn.png" alt="" />
@@ -839,25 +870,21 @@
         </div>
         <div class="row">
           <div class="col-sm-12 col-lg-6 col-xxl-4">
-            <div class="member" data-aos="flip-left" data-aos-duration="1500">
+            <div class="member" data-aos="flip-left">
               <img src="./assets/team1.jpg.png" alt="" />
             </div>
             <p class="member-name">Courtney Henry</p>
             <p class="member-role">Development Manager</p>
           </div>
           <div class="col-sm-12 col-lg-6 col-xxl-4">
-            <div class="member" data-aos="flip-right" data-aos-duration="1500">
+            <div class="member" data-aos="flip-right">
               <img src="./assets/team2.jpg.png" alt="" />
             </div>
             <p class="member-name">Jerome Bell</p>
             <p class="member-role">Software Tester</p>
           </div>
           <div class="col-sm-12 col-lg-12 col-xxl-4">
-            <div
-              class="member last-member"
-              data-aos="flip-left"
-              data-aos-duration="1500"
-            >
+            <div class="member last-member" data-aos="flip-left">
               <img src="./assets/team3.png" alt="" />
             </div>
             <p class="member-name last-name">Jerome Bell</p>
@@ -879,11 +906,7 @@
         </div>
         <div class="row">
           <div class="col-xl-4 col-lg-6">
-            <div
-              class="second-card"
-              data-aos="flip-left"
-              data-aos-duration="1500"
-            >
+            <div class="second-card" data-aos="flip-left">
               <div class="card-background position-relative">
                 <span
                   class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
@@ -903,11 +926,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-6">
-            <div
-              class="second-card"
-              data-aos="flip-left"
-              data-aos-duration="1500"
-            >
+            <div class="second-card" data-aos="flip-left">
               <div class="second-background position-relative">
                 <span
                   class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
@@ -927,11 +946,7 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-12">
-            <div
-              class="second-card last-card"
-              data-aos="flip-right"
-              data-aos-duration="1500"
-            >
+            <div class="second-card last-card" data-aos="flip-right">
               <div class="third-background position-relative">
                 <span
                   class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
@@ -1173,5 +1188,6 @@
     ></script>
     <!-- Custom Js -->
     <script src="./js/script.js"></script>
+    <script src="./js/vehicles.js"></script>
   </body>
 </html>

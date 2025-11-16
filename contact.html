@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carHut</title>
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font awasem cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fontshare CDN -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Aos Cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swipper-css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./styles/contact.css" />
+  </head>
+  <body>
+    <!-- Header-Section -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html">
+              <img src="./assets/Nav-logo.png" alt="" />
+            </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"
+              ><i class="fa-solid fa-bars text-white fs-2"></i
+            ></span>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarSupportedContent">
+            <button
+              class="offcanvas-header me-auto bg-transparent border-0"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark text-white fs-2"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link first-link"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="vehicles.html">Vehicles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="car.html">Car Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">cart(0)</a>
+              </li>
+            </ul>
+            <div class="navbtn">
+              <a
+                class="btn-nav"
+                data-bs-toggle="modal"
+                data-bs-target="#createAccountModal"
+              >
+                Create Account
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+     <!--  Modal -->
+    <div class="modal fade" id="createAccountModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content ca-modal">
+          <!-- LEFT AREA -->
+          <div class="ca-left">
+            <h1>Welcome Back</h1>
+            <p class="sub-txt">
+              to keep connected with us please login <br />
+              with your personal info
+            </p>
+
+            <button class="left-btn">SIGN IN</button>
+
+            <div class="ca-car">
+              <img src="./assets/modal-car.png" alt="" />
+            </div>
+          </div>
+
+          <div class="ca-right">
+            <h1>Create Account</h1>
+
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+
+            <p class="small-text">or use your email for registration</p>
+
+            <div class="input-line">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div>
+
+            <div class="input-line">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+
+            <div class="input-line">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+
+            <button class="right-btn">SIGN IN</button>
+            <button
+              class="close-right-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner-section -->
+    <section class="banner-sec d-flex">
+      <div class="container">
+        <div class="banner-cntn">
+          <h1 class="banner-heading">Contact Us</h1>
+          <h2 class="banner-sub-heading">
+            <a href="index.html">Home </a>/ Contact Us
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- Book-section -->
+    <section class="book-sec">
+      <div class="container">
+        <div class="booking-wrapper">
+          <div class="booking-card">
+            <div class="card-heading">
+              <h2>Book your car</h2>
+            </div>
+
+            <div class="form-group">
+              <select>
+                <option>Car type</option>
+              </select>
+              <select>
+                <option>Place of rental</option>
+              </select>
+              <select>
+                <option>Place of return</option>
+              </select>
+              <input type="date" placeholder="dd-mm-yyyy" />
+              <input type="date" placeholder="dd-mm-yyyy" />
+            </div>
+
+            <button class="book-btn">Book Now</button>
+          </div>
+          <div class="car-img">
+            <img src="./assets/contact/Img (1).png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- information-section -->
+    <section class="info-sec">
+      <div class="container">
+        <div class="outer d-flex justify-content-between align-items-center">
+          <div class="info d-flex align-items-center gap-3">
+            <div class="info-img">
+              <img src="./assets/contact/info-1.png" alt="" />
+            </div>
+            <div>
+              <a href="">
+                <p class="title">Address</p>
+                <p class="value">Oxford Ave. Cary, NC 27511</p></a
+              >
+            </div>
+          </div>
+
+          <div class="info d-flex align-items-center gap-3">
+            <div class="info-img">
+              <img src="./assets/contact/info-2.png" alt="" />
+            </div>
+            <div>
+              <a href=""
+                ><p class="title">Email</p>
+                <p class="value">nwiger@yahoo.com</p></a
+              >
+            </div>
+          </div>
+
+          <div class="info d-flex align-items-center gap-3">
+            <div class="info-img">
+              <img src="./assets/contact/info-3.png" alt="" />
+            </div>
+            <div>
+              <a href=""
+                ><p class="title">Phone</p>
+                <p class="value">+537 547-6401</p></a
+              >
+            </div>
+          </div>
+
+          <div class="info d-flex align-items-center gap-3">
+            <div class="info-img">
+              <img src="./assets/contact/info-4.png" alt="" />
+            </div>
+            <div>
+              <a href="">
+                <p class="title">Opening hours</p>
+                <p class="value">Sun-Mon: 10am - 10pm</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- choose-section -->
+    <section class="choose-sec">
+      <div class="container">
+        <h4 class="choose-heading" data-aos="fade-down-right">
+          Why Choose Us?
+        </h4>
+        <div class="row">
+          <div
+            class="col-sm-12 col-xl-4 choose-fist"
+            data-aos="fade-down-right"
+          >
+            <div class="choose-img">
+              <img src="./assets/choose-icon-1.png" alt="" />
+            </div>
+            <h4 class="choose-head">Special Financing Offers</h4>
+            <p class="choose-para">
+              Our stress-free finance department that can financial solutions to
+              save you money.
+            </p>
+            <div class="choose-img sub-choose">
+              <img src="./assets/choose-icon-2.png" alt="" />
+            </div>
+            <h4 class="choose-head">Trusted Car Dealership</h4>
+            <p class="choose-para">
+              Our stress-free finance department that can financial solutions to
+              save you money.
+            </p>
+          </div>
+          <div class="col-sm-12 col-xl-4">
+            <div class="choose-main">
+              <img src="./assets/choose-img.png" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-12 col-xl-4" data-aos="fade-down-left">
+            <div class="choose-img">
+              <img src="./assets/choose-icon-3.png" alt="" />
+            </div>
+            <h4 class="choose-head">Transparent Pricing</h4>
+            <p class="choose-para">
+              Our stress-free finance department that can financial solutions to
+              save you money.
+            </p>
+            <div class="choose-img choose-sub">
+              <img src="./assets/choose-icon-4.png" alt="" />
+            </div>
+            <h4 class="choose-head">Expert Car Service</h4>
+            <p class="choose-para">
+              Our stress-free finance department that can financial solutions to
+              save you money.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- our-team-section -->
+    <section class="our-team">
+      <div class="container">
+        <div class="team-heading" data-aos="fade-down-right">
+          <h6>Our Team</h6>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 col-xxl-4">
+            <div class="member" data-aos="flip-left">
+              <img src="./assets/team1.jpg.png" alt="" />
+            </div>
+            <p class="member-name">Courtney Henry</p>
+            <p class="member-role">Development Manager</p>
+          </div>
+          <div class="col-sm-12 col-lg-6 col-xxl-4">
+            <div class="member" data-aos="flip-right">
+              <img src="./assets/team2.jpg.png" alt="" />
+            </div>
+            <p class="member-name">Jerome Bell</p>
+            <p class="member-role">Software Tester</p>
+          </div>
+          <div class="col-sm-12 col-lg-12 col-xxl-4">
+            <div class="member last-member" data-aos="flip-left">
+              <img src="./assets/team3.png" alt="" />
+            </div>
+            <p class="member-name last-name">Jerome Bell</p>
+            <p class="member-role last-role">Software Tester</p>
+          </div>
+        </div>
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- Blog-Section -->
+    <section class="blog-sec">
+      <div class="container">
+        <div class="blog-heading" data-aos="fade-down-right">
+          <h6>Latest Blog Post</h6>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-6">
+            <div class="second-card" data-aos="flip-left">
+              <div class="card-background position-relative">
+                <span
+                  class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
+                  >Exterior</span
+                >
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <span class="admin">Admin</span>
+                  <span class="mx-2">•</span>
+                  <span class="date">November 22, 2023</span>
+                </div>
+                <h6 class="title-card">
+                  BMW X5 Gold 2024 Sport Review: Light on Sport
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-6">
+            <div class="second-card" data-aos="flip-left">
+              <div class="second-background position-relative">
+                <span
+                  class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
+                  >Exterior</span
+                >
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <span class="admin">Admin</span>
+                  <span class="mx-2">•</span>
+                  <span class="date">November 22, 2023</span>
+                </div>
+                <h6 class="title-card">
+                  BMW X5 Gold 2024 Sport Review: Light on Sport
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-12">
+            <div class="second-card last-card" data-aos="flip-right">
+              <div class="third-background position-relative">
+                <span
+                  class="badge bg-white text-dark position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill fw-semibold"
+                  >Exterior</span
+                >
+              </div>
+              <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <span class="admin">Admin</span>
+                  <span class="mx-2">•</span>
+                  <span class="date">November 22, 2023</span>
+                </div>
+                <h6 class="title-card">
+                  BMW X5 Gold 2024 Sport Review: Light on Sport
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-btn">
+          <a href="#" class="btn-tertiary">
+            View all <img src="./assets/card-btn.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- premimum-section -->
+    <section class="premium-sec">
+      <div class="container">
+        <div class="premimum-seco">
+          <div class="premum-head" data-aos="fade-down-right">
+            <h5>Explore Our Premium Brands</h5>
+          </div>
+          <div class="premimum-button" data-aos="fade-down-left">
+            <a href="#" class="btn-tertiary">
+              Show All Brands <img src="./assets/card-btn.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- brand-section -->
+    <section class="brand-sec">
+      <div class="brand-slider">
+        <div class="brand-track">
+          <!-- One full set of logos -->
+          <div class="brand-img"><img src="./assets/b-1.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-2.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-3.png" alt="" /></div>
+          <div class="brand-img-4"><img src="./assets/b-4.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-5.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-6.png" alt="" /></div>
+        </div>
+
+        <!-- Duplicate track for seamless loop -->
+        <div class="brand-track">
+          <div class="brand-img"><img src="./assets/b-1.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-2.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-3.png" alt="" /></div>
+          <div class="brand-img-4"><img src="./assets/b-4.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-5.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-6.png" alt="" /></div>
+        </div>
+        <div class="brand-track">
+          <div class="brand-img"><img src="./assets/b-1.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-2.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-3.png" alt="" /></div>
+          <div class="brand-img-4"><img src="./assets/b-4.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-5.png" alt="" /></div>
+          <div class="brand-img"><img src="./assets/b-6.png" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <!-- footer-section -->
+    <section class="footer-sec">
+      <div class="container">
+        <div class="footer-top d-flex justify-content-between">
+          <div class="footer-logo">
+            <a href=""><img src="./assets/Nav-logo.png" alt="" /></a>
+          </div>
+          <div
+            class="footer-cntn d-flex align-items-start justify-content-lg-evenly"
+          >
+            <div class="address-logo">
+              <a href=""><img src="./assets/location.png" alt="" /></a>
+            </div>
+            <div class="address">
+              <p class="footer-para">Address</p>
+              <p class="footer-para">Oxford Ave. Cary, NC 27511</p>
+            </div>
+          </div>
+          <div class="footer-cntn d-flex align-items-start">
+            <div class="address-logo">
+              <a href=""><img src="./assets/mail.png" alt="" /></a>
+            </div>
+            <div class="address">
+              <p class="footer-para">Email</p>
+              <p class="footer-para">nwiger@yahoo.com</p>
+            </div>
+          </div>
+          <div class="footer-cntn d-flex align-items-start">
+            <div class="address-logo">
+              <a href=""> <img src="./assets/call.png" alt="" /></a>
+            </div>
+            <div class="address">
+              <p class="footer-para">Phone</p>
+              <p class="footer-para">+537 547-6401</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-between">
+          <div class="footer-1">
+            <h5>
+              Lorem ipsum dolor sit amet consectetur. Nec magna non egestas in.
+              Enim habitant habitant id nec maecenas.
+            </h5>
+            <div class="footer-logo d-flex logo-social align-items-center">
+              <div class="socal-logo">
+                <a href=""> <img src="./assets/Google Plus.png" alt="" /></a>
+              </div>
+              <div class="socal-logo">
+                <a href=""
+                  ><img src="./assets/Facebook Circled.png" alt=""
+                /></a>
+              </div>
+              <div class="socal-logo">
+                <a href="">
+                  <img src="./assets/LinkedIn Circled.png" alt=""
+                /></a>
+              </div>
+              <div class="socal-logo">
+                <a href=""> <img src="./assets/youtube.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-2">
+            <ul>
+              <li class="footer-heading">Vehicles</li>
+              <li class="footer-link"><a href="">About Us</a></li>
+              <li class="footer-link"><a href="">Contact Us</a></li>
+              <li class="footer-link"><a href="">Gallery</a></li>
+              <li class="footer-link"><a href="">Blog</a></li>
+              <li class="footer-link"><a href="">f.A.Q</a></li>
+            </ul>
+          </div>
+          <div class="footer-2">
+            <ul>
+              <li class="footer-heading">Vehicles</li>
+              <li class="footer-link"><a href="">About Us</a></li>
+              <li class="footer-link"><a href="">Contact Us</a></li>
+              <li class="footer-link"><a href="">Gallery</a></li>
+              <li class="footer-link"><a href="">Blog</a></li>
+              <li class="footer-link"><a href="">f.A.Q</a></li>
+            </ul>
+          </div>
+          <div class="footer-3">
+            <div class="download-heading">
+              <h4>Download App</h4>
+              <div class="store google-play">
+                <a href=""> <img src="./assets/appstore.png" alt="" /></a>
+              </div>
+              <div class="store">
+                <a href=""><img src="./assets/playstore.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="footer-last d-flex align-items-center justify-content-between"
+        >
+          <a href="">
+            <p class="copy">© 2025 exemple.com. All rights reserved.</p></a
+          >
+
+          <ul class="terms d-flex justify-content-center">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><span>•</span></li>
+            <li><a href="#">Privacy Notice</a></li>
+          </ul>
+
+          <div class="scroll-top">
+            <a href="#top"><img src="./assets/scroll-top.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Aos Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- vanila js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
+    <!-- Swipper-jS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- Isotope JS CDN -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Bootstrap  Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Js -->
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

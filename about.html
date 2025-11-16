@@ -80,29 +80,92 @@
                 <a class="nav-link" href="vehicles.html">Vehicles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Car Details</a>
+                <a class="nav-link" href="car.html">Car Details</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">cart(0)</a>
               </li>
             </ul>
             <div class="navbtn">
-              <a href="" class="btn-nav">Create Account</a>
+              <a
+                class="btn-nav"
+                data-bs-toggle="modal"
+                data-bs-target="#createAccountModal"
+              >
+                Create Account
+              </a>
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <!--  Modal -->
+    <div class="modal fade" id="createAccountModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content ca-modal">
+          <!-- LEFT AREA -->
+          <div class="ca-left">
+            <h1>Welcome Back</h1>
+            <p class="sub-txt">
+              to keep connected with us please login <br />
+              with your personal info
+            </p>
+
+            <button class="left-btn">SIGN IN</button>
+
+            <div class="ca-car">
+              <img src="./assets/modal-car.png" alt="" />
+            </div>
+          </div>
+
+          <div class="ca-right">
+            <h1>Create Account</h1>
+
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+
+            <p class="small-text">or use your email for registration</p>
+
+            <div class="input-line">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="Name" />
+            </div>
+
+            <div class="input-line">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+
+            <div class="input-line">
+              <i class="fa-solid fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+
+            <button class="right-btn">SIGN IN</button>
+            <button
+              class="close-right-btn"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Banner-section -->
     <section class="banner-sec d-flex">
       <div class="container">
         <div class="banner-cntn">
           <h1 class="banner-heading">About Us</h1>
           <h2 class="banner-sub-heading">
-            <a href="index.html">Home </a> <a href="about.html">/ About Us</a>
+            <a href="index.html">Home </a>/ About Us
           </h2>
         </div>
       </div>
@@ -112,7 +175,7 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12 col-lg-4">
-            <div class="oridinary-head"data-aos="fade-down-right">
+            <div class="oridinary-head" data-aos="fade-down-right">
               <h2>Where every drive feels extraordinary</h2>
             </div>
           </div>
@@ -632,9 +695,9 @@
       <div class="container">
         <div class="premimum-seco">
           <div class="premum-head" data-aos="fade-down-right">
-            <h5 >Explore Our Premium Brands</h5>
+            <h5>Explore Our Premium Brands</h5>
           </div>
-          <div class="premimum-button"data-aos="fade-down-left">
+          <div class="premimum-button" data-aos="fade-down-left">
             <a href="#" class="btn-tertiary">
               Show All Brands <img src="./assets/card-btn.png" alt=""
             /></a>
