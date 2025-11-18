@@ -73,6 +73,7 @@ nav,
 
 .btn-nav:hover {
   color: var(--primary-color);
+  cursor: pointer;
 }
 .btn-nav:hover::before {
   width: 100%;
