@@ -86,9 +86,16 @@ document.addEventListener("DOMContentLoaded", () => {
     scale: 1.05, // slightly zoom in while tilting
   });
   setTimeout(function () {
-    var modal = new bootstrap.Modal(
-      document.getElementById("createAccountModal")
-    );
+    var modalElement = document.getElementById("createAccountModal");
+    var modal = new bootstrap.Modal(modalElement);
+
     modal.show();
-  }, 2000); 
+
+    // scroll lock when modal opens
+    document.body.style.overflow = "hidden";
+
+    modalElement.addEventListener("hidden.bs.modal", function () {
+      document.body.style.overflow = "auto";
+    });
+  }, 2000);
 });
